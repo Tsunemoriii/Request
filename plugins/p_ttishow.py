@@ -26,7 +26,7 @@ async def save_group(bot, message):
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
-                text='<b>Chat Not Allowed 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact support..</b>',
+                text='<b>Chat Not Allowed 🐞\n\nMy admins has restricted me from working here ! If you want to know more about it contact support.</b>',
                 reply_markup=reply_markup,
             )
 
@@ -37,12 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('Hᴇʟᴘ', url=f"https://t.me/CinemaChatRoom"),
-            InlineKeyboardButton('Tᴜᴛᴏʀɪᴀʟ', url='https://t.me/CinemaRoom')
+            InlineKeyboardButton('Hᴇʟᴘ', url=f"https://t.me/Sonic_Otakus_Chat_Club"),
+            InlineKeyboardButton('Tᴜᴛᴏʀɪᴀʟ', url='https://t.me/Sonic_Otakus_Chat_Club')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-                        text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\n›› Don't Forget Make Admin 🙃\n›› Is Any Doubts About Using Me Click Below Button..⚡⚡.</b>",
+                        text=f"<b>Thankyou For Adding Me In {message.chat.title} ❣️\n\n›› Don't Forget Make Admin. \n›› Is Any Doubts About Using Me Click Below Button.</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -173,7 +173,7 @@ async def gen_invite(bot, message):
 async def ban_a_user(bot, message):
     # https://t.me/GetTGLink/4185
     if len(message.command) == 1:
-        return await message.reply('Give me a user id / username')
+        return await message.reply('Give Me A User Id / Username')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
@@ -206,7 +206,7 @@ async def ban_a_user(bot, message):
 @Client.on_message(filters.command('unban') & filters.user(ADMINS))
 async def unban_a_user(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Give me a user id / username')
+        return await message.reply('Give Me A User Id / Username')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
@@ -256,7 +256,7 @@ async def list_users(bot, message):
 
 @Client.on_message(filters.command('chats') & filters.user(ADMINS))
 async def list_chats(bot, message):
-    raju = await message.reply('Getting List Of chats')
+    raju = await message.reply('Getting List Of Chats')
     chats = await db.get_all_chats()
     out = "Chats Saved In DB Are:\n\n"
     async for chat in chats:
