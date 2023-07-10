@@ -41,7 +41,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
                 creates_join_request=True if REQ_CHANNEL and JOIN_REQS_DB else False
             )).invite_link
             INVITE_LINK = invite_link
-            logger.info("Created Req link")
+            logger.info("Invite Link Created Successfully")
         else:
             invite_link = INVITE_LINK
 
@@ -53,7 +53,7 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
     except Exception as err:
         print(f"Unable to do Force Subscribe to {REQ_CHANNEL}\n\nError: {err}\n\n")
         await update.reply(
-            text="Something went Wrong.",
+            text="Something Went Wrong.",
             parse_mode=enums.ParseMode.MARKDOWN,
             disable_web_page_preview=True
         )
@@ -96,14 +96,14 @@ async def ForceSub(bot: Client, update: Message, file_id: str = False, mode="che
         else:
             return True
     except UserNotParticipant:
-        text=""" × 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀 × """
+        text=""" × 𝗬𝗼𝘂 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀 × """
 
         buttons = [
             [
-                InlineKeyboardButton("Rᴇϙᴜᴇsᴛ Tᴏ Jᴏɪɴ Cʜᴀɴɴᴇʟ", url=invite_link)
+                InlineKeyboardButton("𝗥𝗲𝗾𝘂𝗲𝘀𝘁 𝗧𝗼 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹", url=invite_link)
             ],
             [
-                InlineKeyboardButton(" Tʀʏ Aɢᴀɪɴ ", callback_data=f"{mode}#{file_id}")
+                InlineKeyboardButton("𝗖𝗹𝗶𝗰𝗸 𝗛𝗲𝗿𝗲 𝗧𝗼 𝗚𝗲𝘁 𝗙𝗶𝗹𝗲𝘀", callback_data=f"{mode}#{file_id}")
             ]
         ]
         
