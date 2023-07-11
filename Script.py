@@ -1,6 +1,6 @@
 class script(object):
     START_TXT = """"
-<b>𝗛𝗲𝗹𝗹𝗼! {U_NAME}.
+<b>𝗛𝗲𝗹𝗹𝗼! {message.from_user.mention}.
 <i>» Welcome To ⚡️⚡️Sonic Family⚡️⚡
 » I'm Faye Valentine - An Advanced Anime Files Providing Bot.
 » You Must Join My Channel @Sonic_Otakus To Use Me.
