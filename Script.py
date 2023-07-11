@@ -4,7 +4,7 @@ class script(object):
 <i>» Welcome To ⚡️⚡️Sonic Family⚡️⚡
 » I'm Faye Valentine - An Advanced Anime Files Providing Bot.
 » You Must Join My Channel @Sonic_Otakus To Use Me.
-» Enjoy Your Anime Watching Experience.</i></b>""""
+» Enjoy Your Anime Watching Experience.</i></b>"""
     HELP_TXT = """<b><i>» This is My Help Menu.</i></b>"""
     ABOUT_TXT = """<b><i>» I Am Created By - <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗡𝗼𝗿𝗺𝗮𝗻</a>
 » If You're Intrested In Paid Promotion/Bot Script.
