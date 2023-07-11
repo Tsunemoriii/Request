@@ -45,9 +45,9 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('× 𝗧𝗿𝘆 𝗠𝗲 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗦𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰⚡️⚡️', url='https://t.me/Sonic_Otakus')
-            ],[      
+            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
+            InlineKeyboardButton('⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️', url='https://t.me/Anime_Flix_Pro')
+            ],[
             InlineKeyboardButton('𝗛𝗲𝗹𝗽', callback_data='help'),
             InlineKeyboardButton('𝗔𝗯𝗼𝘂𝘁', callback_data='about')
         ]]
@@ -68,8 +68,8 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('× 𝗧𝗿𝘆 𝗠𝗲 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('𝗦𝗲𝗮𝗿𝗰𝗵', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰⚡️⚡️', url='https://t.me/Sonic_Otakus')
+            InlineKeyboardButton('⚡️⚡️𝗦𝗼𝗻𝗶𝗰 𝗢𝘁𝗮𝗸𝘂𝘀⚡️⚡️', url='https://t.me/Sonic_Otakus'),
+            InlineKeyboardButton('⚡️⚡️𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡️⚡️', url='https://t.me/Anime_Flix_Pro')
             ],[
             InlineKeyboardButton('𝗛𝗲𝗹𝗽', callback_data='help'),
             InlineKeyboardButton('𝗔𝗯𝗼𝘂𝘁', callback_data='about')
@@ -124,8 +124,6 @@ async def start(client, message):
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
-                    caption=f_caption,
-                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡", url="https://t.me/Anime_Flix_Pro") ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
