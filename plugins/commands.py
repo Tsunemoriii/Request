@@ -124,6 +124,7 @@ async def start(client, message):
                 await client.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
+                    reply_markup=InlineKeyboardMarkup( [ [InlineKeyboardButton("⚡𝗔𝗻𝗶𝗺𝗲 𝗙𝗹𝗶𝘅⚡", url="https://t.me/Anime_Flix_Pro") ] ] ),
                     protect_content=msg.get('protect', False),
                     )
             except FloodWait as e:
