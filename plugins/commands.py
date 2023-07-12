@@ -141,7 +141,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱❟ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁...")
+        sts = await message.reply("» 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
