@@ -442,7 +442,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('𝗦𝗵𝗮𝗿𝗲 𝗔𝗻𝗱 𝗦𝘂𝗽𝗽𝗼𝗿𝘁')
+        await query.answer('❣️𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲❣️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝗠𝗮𝗻𝘂𝗮𝗹 𝗙𝗶𝗹𝘁𝗲𝗿', callback_data='manuelfilter'),
@@ -585,7 +585,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('𝗦𝗵𝗮𝗿𝗲 𝗔𝗻𝗱 𝗦𝘂𝗽𝗽𝗼𝗿𝘁')
+            return await query.answer('❣️𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲❣️')
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
@@ -632,7 +632,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ]
             reply_markup = InlineKeyboardMarkup(buttons)
             await query.message.edit_reply_markup(reply_markup)
-    await query.answer('𝗦𝗵𝗮𝗿𝗲 𝗔𝗻𝗱 𝗦𝘂𝗽𝗽𝗼𝗿𝘁')
+    await query.answer('❣️𝗧𝗵𝗮𝗻𝗸 𝗬𝗼𝘂 𝗙𝗼𝗿 𝗨𝘀𝗶𝗻𝗴 𝗠𝗲❣️')
 
 
 async def auto_filter(client, msg, spoll=False):
