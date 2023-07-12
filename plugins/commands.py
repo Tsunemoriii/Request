@@ -94,7 +94,7 @@ async def start(client, message):
         file_id = data
     
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("Please Wait")
+        sts = await message.reply("𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱❟ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶...")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -142,7 +142,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("Please Wait")
+        sts = await message.reply("𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱❟ 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁...")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
