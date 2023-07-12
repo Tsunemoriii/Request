@@ -8,8 +8,7 @@ class script(object):
     HELP_TXT = """<b><i>» This is My Help Menu.</i></b>"""
     ABOUT_TXT = """<b><i>» I Am Created By - <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗡𝗼𝗿𝗺𝗮𝗻</a>.
 » If You're Intrested In Paid Promotion/Bot Script.
-» Contact My <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗠𝗮𝘀𝘁𝗲𝗿</a>.
-» You Can Add Me In Your Group And Use Me As Well.</i></b>"""
+» Contact My <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗠𝗮𝘀𝘁𝗲𝗿</a>.</i></b>"""
     SOURCE_TXT = """
 <b><i>» Sure You Can Have Me, But Talk To My <a href='https://t.me/NORMAN_2_2_1_9_4'>𝗠𝗮𝘀𝘁𝗲𝗿</a> First.</i></b>"""
     MANUELFILTER_TXT = """ʜᴇʟᴘ: <b>ꜰɪʟᴛᴇʀꜱ</b>
