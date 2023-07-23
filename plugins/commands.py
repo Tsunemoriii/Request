@@ -94,7 +94,7 @@ async def start(client, message):
         file_id = data
     
     if data.split("-", 1)[0] == "BATCH":
-        sts = await message.reply("» 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲.")
+        sts = await message.reply("» 𝗬𝗼𝘂𝗿 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗙𝗶𝗹𝗲𝘀 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗜𝗻 𝟯𝟬 𝗠𝗶𝗻𝘂𝘁𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲.")
         file_id = data.split("-", 1)[1]
         msgs = BATCH_FILES.get(file_id)
         if not msgs:
@@ -141,7 +141,7 @@ async def start(client, message):
         await sts.delete()
         return
     elif data.split("-", 1)[0] == "DSTORE":
-        sts = await message.reply("» 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲")
+        sts = await message.reply("» 𝗬𝗼𝘂𝗿 𝗙𝗶𝗹𝗲𝘀 𝗔𝗿𝗲 𝗕𝗲𝗶𝗻𝗴 𝗚𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗪𝗮𝗶𝘁... \n » 𝗦𝗮𝘃𝗲 𝗧𝗵𝗲𝘀𝗲 𝗙𝗶𝗹𝗲𝘀 𝗜𝗻 𝗬𝗼𝘂𝗿 𝗦𝗮𝘃𝗲𝗱 𝗠𝗲𝘀𝘀𝗮𝗴𝗲𝘀. \n » 𝗙𝗶𝗹𝗲𝘀 𝗪𝗶𝗹𝗹 𝗕𝗲 𝗗𝗲𝗹𝗲𝘁𝗲𝗱 𝗜𝗻 𝟯𝟬 𝗠𝗶𝗻𝘂𝘁𝗲𝘀. \n » 𝗠𝘂𝘀𝘁 𝗝𝗼𝗶𝗻 @Sonic_Otakus 𝗔𝗻𝗱 @Anime_Flix_Pro 𝗧𝗼 𝗨𝘀𝗲 𝗠𝗲.")
         b_string = data.split("-", 1)[1]
         decoded = (base64.urlsafe_b64decode(b_string + "=" * (-len(b_string) % 4))).decode("ascii")
         try:
@@ -209,7 +209,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('<b><i>» Save These File In Your Saved Messages. \n» Must Join \n 1. ⚡️⚡️@Sonic_Otakus⚡️⚡️ \n 2. ⚡️⚡️@Anime_Flix_Pro⚡️⚡️</i></b>')
+        return await message.reply('<b><i>» Save These File In Your Saved Messages. It Will Be Deleted In 30 Minutes. \n» Must Join \n 1. ⚡️⚡️@Sonic_Otakus⚡️⚡️ \n 2. ⚡️⚡️@Anime_Flix_Pro⚡️⚡️</i></b>')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
